@@ -3,14 +3,14 @@
 using namespace std;
 
 int main(){
-	int a,b[a];
-	float jumlah=0,rata2;
-	cout<<"masukkan Jumlah element= ";cin>>a;
-	for (int i=0; i<a;i++){
-		cout<<"masukkan nilai ke-"<<i+1<<" = ";cin>>b[a];
-		jumlah+=b[a];
+	int n;
+	float x[n],jml=0,rata2;
+	cout<<"masukkan Jumlah element= ";cin>>n;
+	for (float i=0; i<n;i++){
+		cout<<"masukkan nilai ke-"<<i+1<<" = ";cin>>x[n];
+		jml+=x[n];
 	}
-	rata2=jumlah/a;
+	rata2=jml/n;
 	cout<<"Jumlah rata-rata adalah= "<<rata2<<endl;
 getch();
 }

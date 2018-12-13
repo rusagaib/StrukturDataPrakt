@@ -49,9 +49,10 @@ int add_pilih()
 int add_belakang()
 {
    baru=(simpul*)malloc(sizeof(struct simpul));
+
    cout<<"no. Punggung   : ";cin>>baru->nPungung;
-   cout<<"Nama  : ";cin>>baru->nama;
-   cout<<"Posisi  : ";cin>>baru->posisiLur;
+   cout<<"Nama  : ";cin.ignore();cin.getline(baru->nama, 15);
+   cout<<"Posisi  : ";cin.ignore();cin.getline(baru->posisiLur, 20);
    baru->next=NULL;
    if(awal==NULL)
    {
